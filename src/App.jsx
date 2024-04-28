@@ -1,18 +1,18 @@
+import { Routes } from "react-router-dom";
 
-import { Routes } from 'react-router-dom'
-import './App.css'
+
+import "./App.css";
+import Footer from "./Components/Footer";
+import HomeLayout from "./Layouts/HomeLayout";
 
 function App() {
-
-
   return (
     <>
-    <Routes>
-        LMS  
-    </Routes>
-     
+      {}
+      {}
+      <HomeLayout />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
