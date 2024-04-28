@@ -10,7 +10,8 @@ function App() {
     <>
       {}
       {}
-      <HomeLayout />
+      <Footer/>
+      
     </>
   );
 }
