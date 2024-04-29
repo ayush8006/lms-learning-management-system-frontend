@@ -1,18 +1,21 @@
 import { FiMenu } from "react-icons/fi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 
-function HomeLayout() {
+function HomeLayout({ children }) {
   function changeWidth() {
     const drawerSide = document.getElementsByClassName("drawer-side");
-    drawerSide[0].style.width = 0;
+    drawerSide[0].style.width = 'auto';
   }
 
   function hideDrawer() {
     const element = document.getElementsByClassName("drawer-side");
     element[0].checked = false;
 
-    changeWidth();
+    
+    const drawerSide = document.getElementsByClassName("drawer-side");
+    drawerSide[0].style.width = '0';
   }
   return (
     <div className="min-h-[90vh] ">
@@ -48,6 +51,12 @@ function HomeLayout() {
           </ul>
         </div>
       </div>
+
+      {children}
+
+      <Footer/>
+
+
     </div>
   );
 }

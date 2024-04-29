@@ -46,14 +46,19 @@
   ],
 ```
 
-4. Add the tailwind directives on the top of index.css file
+4. Add the tailwind directives on the top of `index.css `file
 ```
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
 ```
+5. Add the following details in the plugin property of tailwing config
 
-5. Then run the server, tailwind should be integrated....
+```
+[require("daisyui'),require("@tailwindcss/line-clamp")]
+```
+
+6. Then run the server, tailwind should be integrated....
 
 
 ### Adding plugins and dependencies
